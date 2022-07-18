@@ -1,0 +1,1 @@
+$(MP_EXTRA_AS_PRE)  -c -mprocessor=$(MP_PROCESSOR_OPTION) -Wa,--defsym=__MPLAB_BUILD=1$(MP_EXTRA_AS_POST),--gdwarf-2 -mdfp="${DFP_DIR}"C:\Users\glomo\OneDrive - USherbrooke\6_Session4_S4_Ete_2022\S4_Projet_Conception_Sys_Num\MPLABX\S4_Project.X\pmod_s.s
