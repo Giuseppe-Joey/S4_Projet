@@ -30,6 +30,7 @@
 
 
 #include "APP.h"
+#include "PROJET.h"
 //#include "TEST.h"
 
 
@@ -117,6 +118,7 @@ void main() {
     // entering function to set date
     char strDate[80] = "";
     APP_set_date(strDate);
+    
     
     // Main loop
     while(1) {       

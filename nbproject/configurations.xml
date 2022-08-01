@@ -20,6 +20,7 @@
       <itemPath>uartjb.h</itemPath>
       <itemPath>DigilentDEMOS.h</itemPath>
       <itemPath>TEST.h</itemPath>
+      <itemPath>PROJET.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -49,6 +50,7 @@
       <itemPath>DigilentDEMOS.c</itemPath>
       <itemPath>TEST.c</itemPath>
       <itemPath>babylonn_s.s</itemPath>
+      <itemPath>PROJET.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

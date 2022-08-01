@@ -57,17 +57,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=acl.c adc.c aic.c btn.c config_bits.c i2c.c lcd.c led.c main.c pmod_s.s pmods.c rgbled.c spiflash.c swt.c uart.c uartjb.c APP.c DigilentDEMOS.c TEST.c babylonn_s.s
+SOURCEFILES_QUOTED_IF_SPACED=acl.c adc.c aic.c btn.c config_bits.c i2c.c lcd.c led.c main.c pmod_s.s pmods.c rgbled.c spiflash.c swt.c uart.c uartjb.c APP.c DigilentDEMOS.c TEST.c babylonn_s.s PROJET.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/config_bits.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/led.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/rgbled.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/swt.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/uartjb.o ${OBJECTDIR}/APP.o ${OBJECTDIR}/DigilentDEMOS.o ${OBJECTDIR}/TEST.o ${OBJECTDIR}/babylonn_s.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/acl.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/aic.o.d ${OBJECTDIR}/btn.o.d ${OBJECTDIR}/config_bits.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pmod_s.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/rgbled.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/swt.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/uartjb.o.d ${OBJECTDIR}/APP.o.d ${OBJECTDIR}/DigilentDEMOS.o.d ${OBJECTDIR}/TEST.o.d ${OBJECTDIR}/babylonn_s.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/config_bits.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/led.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/rgbled.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/swt.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/uartjb.o ${OBJECTDIR}/APP.o ${OBJECTDIR}/DigilentDEMOS.o ${OBJECTDIR}/TEST.o ${OBJECTDIR}/babylonn_s.o ${OBJECTDIR}/PROJET.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/acl.o.d ${OBJECTDIR}/adc.o.d ${OBJECTDIR}/aic.o.d ${OBJECTDIR}/btn.o.d ${OBJECTDIR}/config_bits.o.d ${OBJECTDIR}/i2c.o.d ${OBJECTDIR}/lcd.o.d ${OBJECTDIR}/led.o.d ${OBJECTDIR}/main.o.d ${OBJECTDIR}/pmod_s.o.d ${OBJECTDIR}/pmods.o.d ${OBJECTDIR}/rgbled.o.d ${OBJECTDIR}/spiflash.o.d ${OBJECTDIR}/swt.o.d ${OBJECTDIR}/uart.o.d ${OBJECTDIR}/uartjb.o.d ${OBJECTDIR}/APP.o.d ${OBJECTDIR}/DigilentDEMOS.o.d ${OBJECTDIR}/TEST.o.d ${OBJECTDIR}/babylonn_s.o.d ${OBJECTDIR}/PROJET.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/config_bits.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/led.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/rgbled.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/swt.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/uartjb.o ${OBJECTDIR}/APP.o ${OBJECTDIR}/DigilentDEMOS.o ${OBJECTDIR}/TEST.o ${OBJECTDIR}/babylonn_s.o
+OBJECTFILES=${OBJECTDIR}/acl.o ${OBJECTDIR}/adc.o ${OBJECTDIR}/aic.o ${OBJECTDIR}/btn.o ${OBJECTDIR}/config_bits.o ${OBJECTDIR}/i2c.o ${OBJECTDIR}/lcd.o ${OBJECTDIR}/led.o ${OBJECTDIR}/main.o ${OBJECTDIR}/pmod_s.o ${OBJECTDIR}/pmods.o ${OBJECTDIR}/rgbled.o ${OBJECTDIR}/spiflash.o ${OBJECTDIR}/swt.o ${OBJECTDIR}/uart.o ${OBJECTDIR}/uartjb.o ${OBJECTDIR}/APP.o ${OBJECTDIR}/DigilentDEMOS.o ${OBJECTDIR}/TEST.o ${OBJECTDIR}/babylonn_s.o ${OBJECTDIR}/PROJET.o
 
 # Source Files
-SOURCEFILES=acl.c adc.c aic.c btn.c config_bits.c i2c.c lcd.c led.c main.c pmod_s.s pmods.c rgbled.c spiflash.c swt.c uart.c uartjb.c APP.c DigilentDEMOS.c TEST.c babylonn_s.s
+SOURCEFILES=acl.c adc.c aic.c btn.c config_bits.c i2c.c lcd.c led.c main.c pmod_s.s pmods.c rgbled.c spiflash.c swt.c uart.c uartjb.c APP.c DigilentDEMOS.c TEST.c babylonn_s.s PROJET.c
 
 
 
@@ -235,6 +235,12 @@ ${OBJECTDIR}/TEST.o: TEST.c  .generated_files/flags/default/fff2cb0312cb92f80d20
 	@${RM} ${OBJECTDIR}/TEST.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/TEST.o.d" -o ${OBJECTDIR}/TEST.o TEST.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
+${OBJECTDIR}/PROJET.o: PROJET.c  .generated_files/flags/default/167c620458a8aa6eec377984cefe53f7314c4426 .generated_files/flags/default/87483c345429186c5999dcd95309ab66555f8ca8
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/PROJET.o.d 
+	@${RM} ${OBJECTDIR}/PROJET.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE) -g -D__DEBUG -D__MPLAB_DEBUGGER_PK3=1  -fframe-base-loclist  -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PROJET.o.d" -o ${OBJECTDIR}/PROJET.o PROJET.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
 else
 ${OBJECTDIR}/acl.o: acl.c  .generated_files/flags/default/c22faaca7179ee8843354c94c240853c2cecbbda .generated_files/flags/default/87483c345429186c5999dcd95309ab66555f8ca8
 	@${MKDIR} "${OBJECTDIR}" 
@@ -343,6 +349,12 @@ ${OBJECTDIR}/TEST.o: TEST.c  .generated_files/flags/default/fb76257ba9cdf2765da5
 	@${RM} ${OBJECTDIR}/TEST.o.d 
 	@${RM} ${OBJECTDIR}/TEST.o 
 	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/TEST.o.d" -o ${OBJECTDIR}/TEST.o TEST.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
+	
+${OBJECTDIR}/PROJET.o: PROJET.c  .generated_files/flags/default/d1e7623b86551dfed701e2021ee171b349881ada .generated_files/flags/default/87483c345429186c5999dcd95309ab66555f8ca8
+	@${MKDIR} "${OBJECTDIR}" 
+	@${RM} ${OBJECTDIR}/PROJET.o.d 
+	@${RM} ${OBJECTDIR}/PROJET.o 
+	${MP_CC}  $(MP_EXTRA_CC_PRE)  -g -x c -c -mprocessor=$(MP_PROCESSOR_OPTION)  -MP -MMD -MF "${OBJECTDIR}/PROJET.o.d" -o ${OBJECTDIR}/PROJET.o PROJET.c    -DXPRJ_default=$(CND_CONF)  -legacy-libc  $(COMPARISON_BUILD)  -mdfp="${DFP_DIR}"  
 	
 endif
 
